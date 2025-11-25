@@ -191,6 +191,18 @@ ul {
     letter-spacing: -0.5px;
 }
 
+.logo-image {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .logo-image {
+        height: 32px;
+    }
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -965,6 +977,19 @@ section {
     font-weight: 900;
     color: var(--accent-color);
     margin-bottom: var(--spacing-xs);
+}
+
+.footer-logo-image {
+    height: 50px;
+    width: auto;
+    display: block;
+    margin-bottom: var(--spacing-sm);
+}
+
+@media (max-width: 768px) {
+    .footer-logo-image {
+        height: 40px;
+    }
 }
 
 .footer-tagline {
