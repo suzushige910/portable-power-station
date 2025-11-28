@@ -543,6 +543,7 @@ section {
     font-size: 1.75rem;
     font-weight: 900;
     margin-bottom: var(--spacing-xs);
+    display: none; /* 画像内に製品名が含まれているため非表示 */
 }
 
 .product-tagline {
