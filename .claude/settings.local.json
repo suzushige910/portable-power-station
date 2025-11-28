@@ -6,7 +6,11 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "Bash(git pull:*)",
-      "Bash(git stash:*)"
+      "Bash(git stash:*)",
+      "Bash(for file in 600l.html 1000l.html 2000l.html 3000l.html dbs2100-pro.html dbs3500.html)",
+      "Bash(do echo \"Processing $file\")",
+      "Bash(done)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []
