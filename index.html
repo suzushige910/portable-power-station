@@ -45,35 +45,53 @@
             <!-- 背景画像プレースホルダー: キャンプ場や災害備えのイメージ -->
         </div>
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    もしもの時も、<br class="sp-only">いつもの旅も。<br>
-                    <span class="hero-title-highlight">Dabbsson</span>が、<br class="sp-only">あなたの電源を守る
-                </h1>
-                <p class="hero-subtitle">
-                    半固体バッテリー × 高出力 × 軽量設計 —<br>
-                    災害備えにも、アウトドアにも強いポータブル電源
-                </p>
-                <div class="hero-cta">
-                    <a href="#products" class="btn btn-primary btn-large">製品ラインナップをみる</a>
-                    <a href="#cta" class="btn btn-secondary btn-large">お問い合わせ・相談</a>
+            <div class="hero-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        もしもの時も、<br class="sp-only">いつもの旅も。<br>
+                        <span class="hero-title-highlight">Dabbsson</span>が、<br class="sp-only">あなたの電源を守る
+                    </h1>
+                    <p class="hero-subtitle">
+                        半固体バッテリー × 高出力 × 軽量設計 —<br>
+                        災害備えにも、アウトドアにも強いポータブル電源
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#products" class="btn btn-primary btn-large">製品ラインナップをみる</a>
+                        <a href="#cta" class="btn btn-secondary btn-large">お問い合わせ・相談</a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-item">
+                            <span class="trust-number">5年</span>
+                            <span class="trust-label">保証</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-number">4000回</span>
+                            <span class="trust-label">サイクル寿命</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-number">0.015秒</span>
+                            <span class="trust-label">自動切替</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="hero-trust">
-                    <div class="trust-item">
-                        <span class="trust-number">5年</span>
-                        <span class="trust-label">保証</span>
-                    </div>
-                    <div class="trust-item">
-                        <span class="trust-number">4000回</span>
-                        <span class="trust-label">サイクル寿命</span>
-                    </div>
-                    <div class="trust-item">
-                        <span class="trust-number">0.015秒</span>
-                        <span class="trust-label">自動切替</span>
-                    </div>
+                <div class="hero-image" style="text-align: center; animation: float 3s ease-in-out infinite;">
+                    <img src="images/1000l.png" alt="Dabbsson 1000L ポータブル電源" style="max-width: 100%; height: auto; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));">
                 </div>
             </div>
         </div>
+        <style>
+            @keyframes float {
+                0%, 100% { transform: translateY(0px); }
+                50% { transform: translateY(-20px); }
+            }
+            @media (max-width: 768px) {
+                .hero-content {
+                    grid-template-columns: 1fr !important;
+                    gap: 2rem !important;
+                }
+                .hero-image { order: -1; }
+            }
+        </style>
     </section>
 
     <!-- 問題提起 -->
