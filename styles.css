@@ -531,7 +531,7 @@ section {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: var(--spacing-lg);
     margin-bottom: var(--spacing-md);
 }
@@ -652,6 +652,7 @@ section {
     font-size: 0.95rem;
     font-weight: 600;
     line-height: 1.8;
+    min-width: 280px;
 }
 
 .price-original {
@@ -688,6 +689,10 @@ section {
 @media (max-width: 768px) {
     .product-grid {
         grid-template-columns: 1fr;
+    }
+
+    .product-price {
+        min-width: auto;
     }
 }
 
